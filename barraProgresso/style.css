@@ -1,0 +1,43 @@
+* { 
+
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+
+
+
+
+
+
+}
+
+.container{
+    text-align: center;
+
+}
+
+
+.progresso-container{
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350%;
+    
+
+
+
+
+
+}
