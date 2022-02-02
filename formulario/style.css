@@ -63,22 +63,40 @@ form input{
 }
 .username{
 
-    background: #939598; ;
+    background: #DCE4F2; ;
     width: 250px;
     height: 30px;
     background-color: none;
+    margin-top: 20px;
    
 
 }
 
 .password{
 
-    background: #939598; ;
+    background: #DCE4F2; ;
     width: 250px;
     height: 30px;
     background-color: none;
-   margin-top: 10px
-   ;
+    margin-top: 10px;
+    
 
 }
 
+.loguim{
+
+    width: 250px;
+    height: 30px;
+    background: #121317;
+    margin-top: 10px;
+    text-align: center;
+    
+    cursor: pointer;
+
+}
+
+a{
+
+    text-decoration: none;
+    
+}
