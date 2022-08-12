@@ -1,3 +1,33 @@
-# Projetos HTML, CSS & JavaScript
+# Projetos Front End 
 
-### 01 - [Cards Espansivos](https://github.com/Cabral1Silva/project-js-css-html/tree/main/cards-Flexbox)
+
+
+##### :mag_right: Sobre:
+
+Neste repositório estão trabalhos feitos de forma autónoma para colocar em pratica o que estou aprendendo, sem uso de biblioteca.  :dart:
+
+
+
+##### :hammer_and_wrench: Tecnologias : 
+
+- HTML
+- CSS
+- JAVASCRIPT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
