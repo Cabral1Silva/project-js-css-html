@@ -1,0 +1,1 @@
+window.objCalculadora = new Calculadora();
