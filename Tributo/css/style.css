@@ -1,0 +1,15 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(214, 214, 214); 
+
+}
+
+.container{
+    max-width: 1100px;
+    background-color: #dddddd;
+    position: relative;
+    margin:50px auto; /*encima e embaixo vai ter 50px na lateral fica automatico, para funcionar precisa definir o position como relative*/
+    padding:10px 30px;
+
+
+}
