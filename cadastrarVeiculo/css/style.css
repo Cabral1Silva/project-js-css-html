@@ -1,0 +1,24 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.header-container{
+
+   background-image:url(/cadastrarVeiculo/img/carros.jpeg); 
+   background-repeat: no-repeat;
+   background-position: center;
+    width: 100vw;
+    height: 30vh;    
+   
+
+
+}
+
+.main-container{
+
+    background-color: rgb(66, 175, 81);
+    width: 100vw;
+    height: 70vh;   
+
+}
