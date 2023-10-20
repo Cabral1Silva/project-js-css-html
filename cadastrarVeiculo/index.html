@@ -10,7 +10,7 @@
 
     <div class="header-container">
 
-    <span>Cadastre seu veiculo para vender mais rapido!</span>
+    <h3>Cadastre seu veiculo para vender mais rapido!</h3>
     
     </div>
 
@@ -20,49 +20,59 @@
   <div class="main-container">
 
     <div class="formulario-container">
-        <h3>FORMULÁRIO</h3>
+        <h2>FORMULÁRIO</h2>
         <H1>Venda seu veiculo mais rapido!</H1>
-        <span>Descreve as caracteristicas e marque os opcionais que ele possui</span>
-        <span>Titulo do anúncio</span>
+        <p>Descreve as caracteristicas e marque os opcionais que ele possui</p>
+        <p>Titulo do anúncio</p>
+
         <div class="titulo-anuncio">
-            <form action="">
-                <input type="text" name="" id="" value="Um titulo para anuciar seu carro">
+            <form >
+                <label for="title">titulo do anuncio <span class="required-field">*</span></label>
+                <input 
+                type="text" 
+                name="title"
+                id= "title" 
+                placeholder="Um titulo para anuciar seu carro"
+                minlength="1"
+                maxlength="20"
+                required
+                />
             </form>
         </div>
         <div class="preco-anuncio">
             <form action="">
                 <label for="">Preço:</label>
-                <input type="text" value="Defina o preço">
+                <input type="text" placeholder="Informe um valor">
             </form>
         </div>
         <div class="descricao-anuncio">
             <form action="">
                 <label for="">Descrição:</label>
-                <input type="tex">
+                <input type="text">
             </form>
         </div>
         <div class="marca-anuncio">
             <form action="">
                 <label for="">Marca:</label>
-                <input type="text" value="Informe a marca do veiculo">
+                <input type="text" placeholder="Informe a marca do veiculo">
             </form>
         </div>
         <div class="modelo-anuncio">
             <form action="">
                 <label for="">Modelo:</label>
-                <input type="text" value="Informe o modelo do veiculo">
+                <input type="text" placeholder="Informe o modelo do veiculo">
             </form>
         </div>
         <div class="kilometragem">
             <form action="">
                 <label for="">kilometragem:</label>
-                <input type="text" value="Informe a kilometragem do veiculo">
+                <input type="text" placeholder="Informe a kilometragem do veiculo">
             </form>
         </div>
         <div class="data-compra">
             <form action="">
                 <label for="">Data da compra:</label>
-                <input type="date" value="Informe a kilometragem do veiculo">
+                <input type="date" placeholder="Informe a kilometragem do veiculo">
             </form>
         </div>
         <div class="tipo-cambio">
@@ -112,6 +122,7 @@
                     <input type="checkbox" name="" id="">
                     <label for="">Banco de couro</label>
                 </div>
+                
 
             </form>
         </div>     

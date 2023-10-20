@@ -1,24 +1,66 @@
+/*reset css*/
 *{
     margin:0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #f0ebf8;
+}
+/*colocar um estilo padrão dos titulos*/
+h1,h2,h3,h4,h5,h6{
+
+    color:#333
+}
+/*cor padrao para paragrafos e label*/
+p,label{
+    color:#444;
+}
+/**/
+input{
+    border:none;
+    border-bottom:1px solid #ccc;
+    padding: 10px 0;
+}
+
+/*padronizar estilo dos input de acordo com o tipo*/
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"]{
+    width: 400px;
+    background: transparent;
+       
 }
 
 .header-container{
 
-   background-image:url(/cadastrarVeiculo/img/carros.jpeg); 
-   background-repeat: no-repeat;
-   background-position: center;
+    padding: 30px;
     width: 100vw;
-    height: 30vh;    
-   
-
+    height: 30vh; 
+ 
 
 }
+
+
+
 
 .main-container{
 
     background-color: rgb(66, 175, 81);
     width: 100vw;
-    height: 70vh;   
+    height: 70vh; 
+     
 
 }
+
+.formulario-container{
+    background-color: rgb(228, 236, 229);
+    width: 40%;
+    height: 90%; 
+    margin: 0 auto; /*forma de centralizar o elemento*/
+    padding: 0 auto;
+
+}
+
