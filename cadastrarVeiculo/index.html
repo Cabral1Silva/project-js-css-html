@@ -23,7 +23,7 @@
         <h2>FORMULÁRIO</h2>
         <H1>Venda seu veiculo mais rapido!</H1>
         <p>Descreve as caracteristicas e marque os opcionais que ele possui</p>
-        <p>Titulo do anúncio</p>
+       
 
         <div class="titulo-anuncio">
             <form >
@@ -36,108 +36,177 @@
                 minlength="1"
                 maxlength="20"
                 required
+                class="block"
                 />
             </form>
         </div>
-        <div class="preco-anuncio">
+        <div class="preco-anuncio" >
             <form action="">
-                <label for="">Preço:</label>
-                <input type="text" placeholder="Informe um valor">
+                <label for="price">Preço<span class="required-field"> *</span></label>
+                <input 
+                type="number" 
+                name="price"
+                id= "price" 
+                placeholder="Defina o preço do veiculo"
+                class="block"
+               
+                required>
             </form>
         </div>
         <div class="descricao-anuncio">
             <form action="">
-                <label for="">Descrição:</label>
-                <input type="text">
+                <label for="description">Descrição <span class="required-field">*</span></label>
+                <textarea name="description" id="description" class="block" placeholder="Aqui você coloca os detalhes do veiculo"></textarea>
             </form>
         </div>
         <div class="marca-anuncio">
             <form action="">
-                <label for="">Marca:</label>
-                <input type="text" placeholder="Informe a marca do veiculo">
+                <label for="brand">Marca <span class="required-field">*</span></label>
+                <input 
+                type="text" 
+                name="brand"
+                id= "brand" 
+                placeholder="Qual a marca do seu carro"
+                minlength="1"
+                maxlength="20"
+                class="block"
+                required>
             </form>
         </div>
         <div class="modelo-anuncio">
             <form action="">
-                <label for="">Modelo:</label>
-                <input type="text" placeholder="Informe o modelo do veiculo">
+                <label for="model">Modelo <span class="required-field">*</span></label>
+                <input 
+                type="text" 
+                name="model"
+                id= "model" 
+                placeholder="Informe o modelo do carro"
+                minlength="1"
+                maxlength="20"
+                class="block"
+                required>
             </form>
         </div>
         <div class="kilometragem">
-            <form action="">
-                <label for="">kilometragem:</label>
-                <input type="text" placeholder="Informe a kilometragem do veiculo">
+            <form action="mileage">
+                <label for="">kilometragem <span class="required-field">*</span></label>
+                <input 
+                type="number" 
+                name="mileage"
+                id= "mileage" 
+                placeholder="Informe a Kilometragem do carro"
+                minlength="1"
+                maxlength="20"
+                class="block"
+                required>
             </form>
         </div>
         <div class="data-compra">
             <form action="">
-                <label for="">Data da compra:</label>
-                <input type="date" placeholder="Informe a kilometragem do veiculo">
+                <label for="purchase-date">Data da compra <span class="required-field">*</span></label>
+                <input 
+                type="number" 
+                name="purchase-date"
+                id= "purchase-date" 
+                class="block"
+                required>
             </form>
         </div>
         <div class="tipo-cambio">
-            <form action="tipo-cambio">
-                <label for="">Tipo do câmbio:</label>
-                <div class="radio-cambio">
-                    <input type="radio" name="tipo-cambio"> 
-                    <label for="">Manual</label>
-                </div>
-                <div class="radio-cambio">
-                    <input type="radio" name="tipo-cambio"> 
-                    <label for="">Automatico</label>
-                </div>  
-            </form>
-        </div>
-        <div class="opcionais">
             <form action="">
-                <div class="airbag">
-                    <input type="checkbox" name="" id="">
-                    <label for="">Airbag</label>
-                </div>
-                <div class="alarme">
-                    <input type="checkbox" name="" id="">
-                    <label for="">alarme</label>
-                </div>
-                <div class="arCondicionado">
-                    <input type="checkbox" name="" id="">
-                    <label for="">Ar Condicionado</label>
-                </div>
-                <div class="camaraRe">
-                    <input type="checkbox" name="" id="">
-                    <label for="">Camara de Ré</label>
-                </div>
-                <div class="assistentePista">
-                    <input type="checkbox" name="" id="">
-                    <label for="">Assistente de pista</label>
-                </div>
-                <div class="partidaKeyless">
-                    <input type="checkbox" name="" id="">
-                    <label for="">Partida Keyless</label>
-                </div>
-                <div class="integracaoCelular">
-                    <input type="checkbox" name="" id="">
-                    <label for="">Integracao com celular</label>
-                </div>
-                <div class="BancoCouro">
-                    <input type="checkbox" name="" id="">
-                    <label for="">Banco de couro</label>
-                </div>
+                <p>Tipo de cambio <span class="required-field">*</span> </p>
                 
-
-            </form>
-        </div>     
-
-
-
-        <div class="enviar">
-            <form action="">
-                <input type="button" value="ENVIAR">
+                    <input type="radio" name="manual" id="manual"> 
+                    <label for="manual">Manual</label>
+               
+                    <input type="radio" name="automatico" id="automatico"> 
+                    <label for="">Automatico</label>
+                  
             </form>
         </div>
+        <div class="opcionais-box">
+            <p>Opcionais</p>
+                <ul class="opcionais-list">
+                    <li>
+                        <input 
+                        type="checkbox"
+                        id="airbag"
+                        name="optionais[]"
+                        value="airbag">
+                        <label for="airbag">Airbag</label>
+                    </li>
+                    <li>
+                        <input 
+                        type="checkbox"
+                        id="alarme"
+                        name="optionais[]"
+                        value="alarme">
+                        <label for="airbag">Alarme</label>
+                    </li>
+                    <li>
+                        <input 
+                        type="checkbox"
+                        id="ac"
+                        name="optionais[]"
+                        value="ac">
+                        <label for="airbag">Ar condicionado</label>
+                    </li>
+                    <li>
+                        <input 
+                        type="checkbox"
+                        id="reverse-camera"
+                        name="optionais[]"
+                        value="reverse-camera">
+                        <label for="airbag">Camara de ré</label>
+                    </li>
+                    
+                </ul> 
+        </div> 
+        <div class="opcionais-box">
+            
+                <ul class="opcionais-list">
+                    <li>
+                        <input 
+                        type="checkbox"
+                        id="lane-assitente"
+                        name="optionais[]"
+                        value="lane-assitente">
+                        <label for="airbag">Assistente de pista</label>
+                    </li>
+                    <li>
+                        <input 
+                        type="checkbox"
+                        id="keyless"
+                        name="optionais[]"
+                        value="keyless">
+                        <label for="airbag">Partido keyless</label>
+                    </li>
+                    <li>
+                        <input 
+                        type="checkbox"
+                        id="smartphone"
+                        name="optionais[]"
+                        value="smartphone">
+                        <label for="airbag">Integração celular</label>
+                    </li>
+                    <li>
+                        <input 
+                        type="checkbox"
+                        id="leathe_seat"
+                        name="optionais[]"
+                        value="leathe_seat">
+                        <label for="airbag">Banco de couro</label>
+                    </li>                    
+                </ul> 
+            </div> 
 
-
-
-
+            <div class="box-input">
+                <p>Fotos do carro <span class="required-fild">*</span>
+                <input type="file" multiple accept="image/png, image/jpg" id="image" name="image" required>
+                </p>
+            </div>
+            
+            <input type="button" value="ENVIAR" class="btn-submit"/>
 
     </div>
 

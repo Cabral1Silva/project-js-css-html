@@ -6,13 +6,14 @@
 }
 
 body{
-    background-color: #f0ebf8;
+    background-color: #6c19f3;
 }
 /*colocar um estilo padrão dos titulos*/
 h1,h2,h3,h4,h5,h6{
 
     color:#333
 }
+
 /*cor padrao para paragrafos e label*/
 p,label{
     color:#444;
@@ -23,15 +24,29 @@ input{
     border-bottom:1px solid #ccc;
     padding: 10px 0;
 }
+h1,.titulo-anuncio, .preco-anuncio,.descricao-anuncio,.marca-anuncio,.modelo-anuncio,.kilometragem,.data-compra,.tipo-cambio,.opcionais{
+    padding: 20px 20px ;
+  
+    
+    
+}
+.block{ /*Faz com que o input fique abaixo de descrição*/
+    display: block;
+}
 
 /*padronizar estilo dos input de acordo com o tipo*/
 input[type="text"],
 input[type="number"],
 input[type="date"],
-input[type="file"]{
+input[type="file"],
+textarea{
     width: 400px;
     background: transparent;
        
+}
+textarea{
+
+    padding: 10px 5px;
 }
 
 .header-container{
@@ -39,28 +54,89 @@ input[type="file"]{
     padding: 30px;
     width: 100vw;
     height: 30vh; 
- 
-
 }
-
-
-
 
 .main-container{
 
-    background-color: rgb(66, 175, 81);
+    background-color: #f0ebf8;
     width: 100vw;
     height: 70vh; 
+    
      
 
 }
 
 .formulario-container{
-    background-color: rgb(228, 236, 229);
+    background-color: #f0ebf8;
     width: 40%;
-    height: 90%; 
+   
     margin: 0 auto; /*forma de centralizar o elemento*/
-    padding: 0 auto;
+ 
+    position: relative;
+    top:-150px;
+    padding-left: 25px;
+}
+
+.formulario-container h2{
+
+    
+    font-size: 15px;
+    border-bottom: 3px solid #673ab7;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto; /*centralizar o elemento*/
+   
 
 }
+
+.formulario-container p{ 
+
+    color: #673ab7;
+    margin-left: 20px;
+}
+.tipo-cambio{
+
+    display: flex;
+    flex-direction: row;
+}
+
+.required-field{
+    color: red;
+}
+
+.opcionais-box{
+    display: inline-block;
+    margin: 0 30px 30px 0;
+ 
+}
+
+.opcionais-box li{
+
+    list-style: none;
+}
+
+.btn-submit{
+    margin-top: 20px;
+    background: #673ab7;
+    color: #fff;
+    border: 2px solid transparent;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: 0.5; /**/
+    
+}
+
+.btn-submit:hover{
+
+    background-color: #fff;
+    border-color: #673ab7;
+    color: #673ab7;
+
+
+}
+
+
 
